@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #065c09, #6be874);
+  color: #fff;
+  background-image: url('fondo.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background: url(Minecraft-Logo.png) no-repeat center/contain;
+  height: 150px;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Barra de navegación sticky (siempre visible arriba) */
+nav {
+  background-color: rgba(2, 17, 5, 0.919);
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Menú por defecto (oculto en móvil) */
+.menu {
+  list-style: none;
+  flex-direction: column;
+  display: none;
+  gap: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  transition: background 0.3s;
+  display: block;
+}
+
+.menu a:hover {
+  background: #95d797;
+  border-radius: 5px;
+}
+
+/* Mostrar menú cuando hamburguesa está activa */
+#menu-toggle:checked ~ nav .menu {
+  display: flex;
+}
+
+/* Submenús */
+.submenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: rgba(26, 28, 27, 0.85);
+  padding: 0.5rem;
+  border-radius: 5px;
+  z-index: 9999;
+}
+
+.submenu-right {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background: rgba(47, 58, 47, 0.9);
+  padding: 0.5rem;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.25rem 0.75rem;
+  min-width: 300px;
+  z-index: 10000;
+}
+
+.submenu a {
+  color: white;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.submenu a:hover {
+  background-color: #0c0c0c;
+  border-radius: 5px;
+}
+
+/* Submenús en móviles al usar checkbox */
+.menu input[type="checkbox"]:checked + .submenu {
+  display: flex;
+  position: static;
+}
+
+/* Botón hamburguesa sticky en móvil */
+.hamburger {
+  display: block;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #0a320c;
+  padding: 1rem;
+  color: white;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Estilos para escritorio */
+@media (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    width: auto;
+    text-align: left;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+  }
+
+  .menu li:hover > .submenu {
+    display: flex;
+  }
+
+  .submenu-toggle {
+    display: none !important;
+  }
+
+  /* En escritorio, no usamos checkbox para mostrar submenús */
+  .menu input[type="checkbox"] {
+    display: none;
+  }
+}
+
+main {
+  padding: 2rem;
+}
+
+.card, .card2 {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  transition: transform 0.3s;
+  color: white;
+}
+
+.card2:hover, .card:hover {
+  transform: scale(1.05);
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+

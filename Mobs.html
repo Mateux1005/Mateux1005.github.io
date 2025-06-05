@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="Minecraft.css">
+  <link rel="icon" href="huevo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Mobs - Guía Minecraft</title>
+</head>
+<body>
+  <header></header>
+  <!-- Menú hamburguesa solo visible en móvil -->
+  <input type="checkbox" id="menu-toggle" hidden>
+  <label for="menu-toggle" class="hamburger d-lg-none">&#9776; Menú</label>
+
+  <nav class="main-nav" class="sticky-top">
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+
+      <li class="has-submenu">
+        <a href="Historia.html">Historia</a>
+        <input type="checkbox" id="historia-toggle" hidden>
+        <label for="historia-toggle" class="submenu-toggle d-lg-none">▾</label>
+        <div class="submenu">
+          <div class="submenu-item">
+            <a href="Versiones.html">Versiones</a>
+            <div class="submenu-right">
+              <a href="Versiones.html#1.0.0">1.0.0</a>
+              <a href="Versiones.html#1.1">1.1</a>
+              <a href="Versiones.html#1.2">1.2</a>
+              <a href="Versiones.html#1.4">1.4</a>
+              <a href="Versiones.html#1.5">1.5</a>
+              <a href="Versiones.html#1.6">1.6</a>
+              <a href="Versiones.html#1.7">1.7</a>
+              <a href="Versiones.html#1.8">1.8</a>
+              <a href="Versiones.html#1.9">1.9</a>
+              <a href="Versiones.html#1.10">1.10</a>
+              <a href="Versiones.html#1.11">1.11</a>
+              <a href="Versiones.html#1.12">1.12</a>
+              <a href="Versiones.html#1.13">1.13</a>
+              <a href="Versiones.html#1.114">1.4</a>
+              <a href="Versiones.html#1.15">1.15</a>
+              <a href="Versiones.html#1.16">1.16</a>
+              <a href="Versiones.html#1.17">1.17</a>
+              <a href="Versiones.html#1.18">1.18</a>
+              <a href="Versiones.html#1.19">1.19</a>
+              <a href="Versiones.html#1.20">1.20</a>
+              <a href="Versiones.html#1.21">1.21</a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <a href="Pociones.html">Pociones</a>
+        <div class="submenu">
+          <a href="Pociones.html#base">Pociones base/intermedias</a>
+          <a href="Pociones.html#positivas">Pociones con efectos positivos</a>
+          <a href="Pociones.html#negativas">Pociones con efectos negativos</a>
+          <a href="Pociones.html#especiales">Pociones especiales</a>
+          <a href="Pociones.html#variaciones">Variaciones</a>
+        </div>
+      </li>
+      <li>
+        <a href="Encantamientos.html">Encantamientos</a>
+        <div class="submenu">
+            <a href="Encantamientos.html#espadas">Espadas</a>
+            <a href="Encantamientos.html#armaduras">Armaduras</a>
+            <a href="Encantamientos.html#herramientas">Herramien</a>
+        </div>
+      </li>
+      <li>
+        <a href="Mobs.html">Mobs</a>
+        <div class="submenu">
+          <a href="Mobs.html#pasivos">Mobs pasivos</a>
+          <a href="Mobs.html#Naturales">Mobs Naturales</a>
+          <a href="Mobs.html#hostiles">Mobs hostiles</a>
+          <a href="Mobs.html#Invocados">Mobs de Un Solo Uso (Invocados/Generados con Estructura)</a>
+          <a href="Mobs.html#Inactivos">Mobs Inactivos (Bloques de Mobs)</a>
+          <a href="Mobs.html#variantes">Mobs que no se generan de forma natural o son variantes especiales</a>
+        </div>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container mt-5">
+
+    <div class="row mb-5">
+    <div class="col-lg-6 d-flex flex-column gap-4">
+        <div class="card2 h-100"> 
+            <h2>Mobs</h2>
+            <p>¡Adéntrate en el vibrante y a veces peligroso mundo de Minecraft explorando a sus peculiares habitantes! Desde los amistosos 
+                animales que pueblan tus granjas y te proveen de recursos vitales, hasta las temibles criaturas hostiles que acechan en las 
+                sombras y desafían tu ingenio, cada mob tiene un rol único en esta aventura infinita. Prepárate para descubrir sus comportamientos, 
+                sus valiosos objetos y cómo interactuar con ellos para dominar cada aspecto de tu supervivencia y creatividad en el juego.</p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 mb-4 d-flex align-self-stretch justify-content-center"> 
+        <div class="image-placeholder shadow-lg">
+            <img src="mobs.gif" alt="Imagen Minecraft" class="img-fluid rounded">
+        </div>
+    </div>
+</div>
+
+    
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-8">
+        <div class="card2 text-center sitalve">
+          <h2 class="noseten" id="pasivos">Mobs pasivos</h2>
+        </div>
+      </div>
+    </div>
+  
+      <div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="cerdo" class="w-100">
+            <div class="card2 p-3 " >
+                <h2>Cerdo (Pig)</h2>
+                <p><b>Drops:</b> Carne de cerdo cruda (1-3), Cocinada si se quema.
+                <p><b>Ubicación:</b> Mayoría de biomas de la superficie.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma. Son muy fáciles de derrotar.
+                <p><b>Especial:</b> Se pueden montar con una silla de montar y dirigir con una zanahoria en un palo.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="oveja" class="w-100">
+            <div class="card2 p-3">
+                <h2>Oveja (Sheep)</h2>
+                <p><b>Drops:</b> Lana (1), Cordero crudo (1-2), Cocinado si se quema.
+                <p><b>Ubicación:</b> Mayoría de biomas de la superficie.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma. Se pueden esquilar con tijeras para obtener 1-3 bloques de lana.
+                <p><b>Especial:</b> Se pueden teñir. Si comen hierba, su lana vuelve a crecer.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="vaca" class="w-100">
+            <div class="card2 p-3">
+                <h2>Vaca (Cow)</h2>
+                <p><b>Drops:</b> Cuero (0-2), Carne de res cruda (1-3), Cocinada si se quema.
+                <p><b>Ubicación:</b> Mayoría de biomas de la superficie.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Se pueden ordeñar con un cubo para obtener leche, que elimina todos los efectos de estado.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="pollo" class="w-100">
+            <div class="card2 p-3">
+                <h2>Pollo (Chicken)</h2>
+                <p><b>Drops:</b> Plumas (0-2), Carne de pollo cruda (1), Cocinada si se quema. Ocasionalmente sueltan huevos.
+                <p><b>Ubicación:</b> Mayoría de biomas de la superficie.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Ponen huevos ocasionalmente, que se pueden lanzar para intentar invocar más pollos.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="calamar" class="w-100">
+            <div class="card2 p-3">
+                <h2>Calamar (Squid)</h2>
+                <p><b>Drops:</b> Saco de tinta (1-3).
+                <p><b>Ubicación:</b> Cualquier cuerpo de agua (ríos, océanos, lagos).
+                <p><b>Cómo matarlos más fácil:</b> Atacándolos bajo el agua. Un tridente es muy efectivo.
+                <p><b>Especial:</b> Nadan pasivamente en el agua.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="murcielago" class="w-100">
+            <div class="card2 p-3">
+                <h2>Murciélago (Bat)</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Cuevas oscuras, cielos nocturnos en biomas frondosos.
+                <p><b>Cómo matarlos más fácil:</b> Son difíciles de golpear debido a su vuelo errático. Un arco y flechas son útiles.
+                <p><b>Especial:</b> Vuelan sin rumbo en áreas oscuras. Son completamente inofensivos.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="ocelote" class="w-100">
+            <div class="card2 p-3">
+                <h2>Ocelote (Ocelot)</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Biomas de jungla.
+                <p><b>Cómo matarlos más fácil:</b> Son muy rápidos y huyen del jugador. No se pueden domesticar directamente, pero se pueden ganar su confianza dándoles pescado crudo, lo que los convierte en gatos domesticados.
+                <p><b>Especial:</b> Huyen del jugador. Ahuyentan a los Creepers.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="pez" class="w-100">
+            <div class="card2 p-3">
+                <h2>Pez (Fish) - Bacalao, Salmón, Pez payaso, Pez globo</h2>
+                <p><b>Drops:</b> Bacalao: Bacalao crudo (1). Salmón: Salmón crudo (1). Pez Payaso: Pez payaso crudo (1). Pez Globo: Pez globo crudo (1).
+                <p><b>Ubicación:</b> Bacalao y Salmón en la mayoría de los cuerpos de agua. Pez Payaso en arrecifes de coral. Pez Globo en océanos templados y cálidos.
+                <p><b>Cómo matarlos más fácil:</b> Atacándolos bajo el agua.
+                <p><b>Especial:</b> Nadan pasivamente. El pez globo es venenoso si se come.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="conejo" class="w-100">
+            <div class="card2 p-3">
+                <h2>Conejo (Rabbit)</h2>
+                <p><b>Drops:</b> Piel de conejo (0-1), Carne de conejo cruda (0-1), Pata de conejo (0-1, baja probabilidad).
+                <p><b>Ubicación:</b> Biomas de desierto, taiga, nevados, llanuras.
+                <p><b>Cómo matarlos más fácil:</b> Son pequeños y rápidos. Un arco o una espada con buen alcance son efectivos.
+                <p><b>Especial:</b> Los conejos asesinos (Killer Rabbit) son hostiles y extremadamente raros.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="llama" class="w-100">
+            <div class="card2 p-3">
+                <h2>Llama (Llama)</h2>
+                <p><b>Drops:</b> Cuero (0-2).
+                <p><b>Ubicación:</b> Biomas de montañas y sabanas.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Escupen a los jugadores o mobs hostiles que los ataquen. Se pueden ensillar y equipar con alfombras para variar su apariencia. Se pueden formar caravanas.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="tortuga" class="w-100">
+            <div class="card2 p-3">
+                <h2>Tortuga (Turtle)</h2>
+                <p><b>Drops:</b> Hierba marina (0-2), Escudo de tortuga (1, cuando una cría se convierte en adulta).
+                <p><b>Ubicación:</b> Playas.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Ponen huevos en la arena que, con el tiempo, eclosionan en crías de tortuga. Las crías sueltan escudos al crecer.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="panda" class="w-100">
+            <div class="card2 p-3">
+                <h2>Panda (Panda)</h2>
+                <p><b>Drops:</b> Bambú (0-2).
+                <p><b>Ubicación:</b> Biomas de jungla.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Tienen diferentes personalidades (nervioso, juguetón, perezoso, etc.) que afectan su comportamiento.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="zorro" class="w-100">
+            <div class="card2 p-3">
+                <h2>Zorro (Fox)</h2>
+                <p><b>Drops:</b> Ninguno. Ocasionalmente sueltan el objeto que tienen en la boca.
+                <p><b>Ubicación:</b> Biomas de taiga, taiga nevada, taiga gigante.
+                <p><b>Cómo matarlos más fácil:</b> Son rápidos. Puedes alimentarlos con bayas dulces para que confíen en ti.
+                <p><b>Especial:</b> Cazan pollos, conejos y bacalao. Duermen durante el día. Pueden recoger objetos.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="ajolote" class="w-100">
+            <div class="card2 p-3">
+                <h2>Ajolote (Axolotl)</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Cuevas exuberantes (Lush Caves).
+                <p><b>Cómo matarlos más fácil:</b> Atacándolos. Es más común capturarlos con un cubo.
+                <p><b>Especial:</b> Se pueden atrapar con un cubo. Atacan a otros mobs acuáticos y regeneran la salud del jugador si este ayuda en la caza. Se hacen los muertos para evitar el daño.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="cabra" class="w-100">
+            <div class="card2 p-3">
+                <h2>Cabra (Goat)</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Biomas de montaña.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Saltan muy alto y embisten a jugadores y mobs que permanezcan quietos cerca de ellas. Se pueden ordeñar para obtener leche.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="rana" class="w-100">
+            <div class="card2 p-3">
+                <h2>Rana (Frog)</h2>
+                <p><b>Drops:</b> Bolas de limo (cuando comen un cubo de magma).
+                <p><b>Ubicación:</b> Pantanos y manglares.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Comen pequeños cubos de magma o limos, lo que les permite soltar bolas de limo. Tienen diferentes colores según el bioma donde eclosionan sus renacuajos.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="camello" class="w-100">
+            <div class="card2 p-3">
+                <h2>Camello (Camel)</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Pueblos del desierto.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Son mobs grandes y pueden ser montados por dos jugadores a la vez. Pueden "dash" para cruzar barrancos. Son inmunes al daño por cactus.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="sniffer" class="w-100">
+            <div class="card2 p-3">
+                <h2>Sniffer</h2>
+                <p><b>Drops:</b> Semillas de Antorcha de planta (Torchflower Seeds), Semillas de Vainilla (Pitcher Pods).
+                <p><b>Ubicación:</b> Nacen de huevos de Sniffer encontrados en ruinas de océanos cálidos mediante la arqueología.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> El Sniffer es el primer mob prehistórico en Minecraft. Busca y desentierra semillas únicas (Torchflower y Pitcher Pods) que se pueden plantar.</p>
+            </div>
+        </section>
+        
+    </div>
+</div>
+<div class="row justify-content-center mb-5">
+      <div class="col-md-8">
+        <div class="card2 text-center sitalve">
+          <h2 class="noseten" id="Naturales">Mobs Naturales</h2>
+        </div>
+      </div>
+    </div>
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="lobo" class="w-100">
+            <div class="card2 p-3">
+                <h2>Lobo (Wolf)</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Biomas de bosque, taiga y nevados.
+                <p><b>Cómo matarlos más fácil:</b> Si son salvajes, atacan en grupo. Es mejor domesticarlos con huesos antes de atacarlos.
+                <p><b>Especial:</b> Se pueden domesticar con huesos, convirtiéndolos en compañeros leales que atacan a los mobs hostiles que atacan al jugador.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="panda-enojado" class="w-100">
+            <div class="card2 p-3">
+                <h2>Panda Enojado (Aggressive Panda)</h2>
+                <p><b>Drops:</b> Bambú (0-2).
+                <p><b>Ubicación:</b> Biomas de jungla.
+                <p><b>Cómo matarlos más fácil:</b> Son más rápidos y fuertes que los pandas normales.
+                <p><b>Especial:</b> Esta es una variación del Panda. Atacan si son golpeados. Los pandas con esta personalidad son más propensos a ser agresivos.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="arana" class="w-100">
+            <div class="card2 p-3">
+                <h2>Araña (Spider)</h2>
+                <p><b>Drops:</b> Hilo (0-2), Ojo de araña (0-1).
+                <p><b>Ubicación:</b> En la superficie durante la noche, en cuevas.
+                <p><b>Cómo matarlos más fácil:</b> Son rápidas. Usar una espada con el encantamiento "Ruina de los Artrópodos" es muy efectivo.
+                <p><b>Especial:</b> Son hostiles de noche y en la oscuridad, pero neutrales durante el día si la luz es suficiente. Pueden escalar paredes.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="zombified-piglin" class="w-100">
+            <div class="card2 p-3">
+                <h2>Hombre Cerdo Zombi (Zombified Piglin)</h2>
+                <p><b>Drops:</b> Carne podrida (0-1), Pepita de oro (0-1). Ocasionalmente, espada de oro (1).
+                <p><b>Ubicación:</b> Nether.
+                <p><b>Cómo matarlos más fácil:</b> Atacan en grupo si se golpea a uno. Son inmunes al fuego. Una espada con "Filo IV" o superior es efectiva.
+                <p><b>Especial:</b> Son neutrales a menos que sean atacados. Si atacas a uno, todos los Piglins Zombificados cercanos se volverán hostiles. Son inmunes al fuego.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="enderman" class="w-100">
+            <div class="card2 p-3">
+                <h2>Enderman</h2>
+                <p><b>Drops:</b> Perla de Ender (0-1).
+                <p><b>Ubicación:</b> Principalmente en el End, pero también en la superficie durante la noche y en el Nether.
+                <p><b>Cómo matarlos más fácil:</b> Atacar sus piernas. Mirarlos directamente los hace hostiles. Usar un cubo de agua es muy efectivo ya que les causa daño.
+                <p><b>Especial:</b> Se teletransportan cuando son atacados, cuando reciben daño de agua o lluvia, o cuando el jugador los mira a los ojos. Pueden recoger y colocar bloques.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="oso-polar" class="w-100">
+            <div class="card2 p-3">
+                <h2>Oso Polar (Polar Bear)</h2>
+                <p><b>Drops:</b> Pescado crudo (0-1).
+                <p><b>Ubicación:</b> Biomas nevados y de hielo.
+                <p><b>Cómo matarlos más fácil:</b> Las crías son inofensivas. Los adultos son neutrales a menos que haya una cría cerca o que sean atacados.
+                <p><b>Especial:</b> Atacan si te acercas demasiado a sus crías o si los golpeas.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="delfin" class="w-100">
+            <div class="card2 p-3">
+                <h2>Delfín (Dolphin)</h2>
+                <p><b>Drops:</b> Pescado crudo (0-1).
+                <p><b>Ubicación:</b> Océanos.
+                <p><b>Cómo matarlos más fácil:</b> Atacándolos bajo el agua.
+                <p><b>Especial:</b> Te dan un impulso de velocidad en el agua si los sigues. Si los alimentas con pescado, te guiarán a tesoros.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="loro" class="w-100">
+            <div class="card2 p-3">
+                <h2>Loro (Parrot)</h2>
+                <p><b>Drops:</b> Plumas (0-2).
+                <p><b>Ubicación:</b> Biomas de jungla.
+                <p><b>Cómo matarlos más fácil:</b> Son pequeños y vuelan.
+                <p><b>Especial:</b> Se pueden domesticar con semillas. Imitan los sonidos de los mobs hostiles cercanos. Pueden posarse en el hombro del jugador. ¡No los alimentes con galletas, es veneno para ellos!</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="piglin" class="w-100">
+            <div class="card2 p-3">
+                <h2>Piglín (Piglin)</h2>
+                <p><b>Drops:</b> Lingote de oro (cuando se les da un lingote). Ocasionalmente sueltan objetos de oro.
+                <p><b>Ubicación:</b> Nether (biomas de Nether Wastes, Crimson Forest, Basalt Deltas).
+                <p><b>Cómo matarlos más fácil:</b> Atacan en grupo. Es importante llevar armadura de oro para evitar que te ataquen de inmediato.
+                <p><b>Especial:</b> Son neutrales si el jugador lleva armadura de oro. Se vuelven hostiles si el jugador rompe un bloque de oro o abre un cofre cerca de ellos. Pueden ser "truequeados" (bartered) dándoles lingotes de oro.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="piglin-bruto" class="w-100">
+            <div class="card2 p-3">
+                <h2>Piglín Bruto (Piglin Brute)</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Bastiones del Nether.
+                <p><b>Cómo matarlos más fácil:</b> Son extremadamente fuertes y siempre hostiles. Equipado con una Hacha de oro. Atacan sin importar que lleves armadura de oro.
+                <p><b>Especial:</b> Son los únicos Piglins que siempre son hostiles y no pueden ser truequeados.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="gato" class="w-100">
+            <div class="card2 p-3">
+                <h2>Gato (Cat)</h2>
+                <p><b>Drops:</b> Hilo (0-2).
+                <p><b>Ubicación:</b> Pueblos (Villages) y chozas de brujas (Swamp Huts).
+                <p><b>Cómo matarlos más fácil:</b> Son rápidos y huyen. Es mejor domesticarlos con pescado crudo.
+                <p><b>Especial:</b> Ahuyentan a los Creepers. Ocasionalmente le traen regalos al jugador por la mañana si están domesticados.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="abeja" class="w-100">
+            <div class="card2 p-3">
+                <h2>Abeja (Bee)</h2>
+                <p><b>Drops:</b> Ninguno. Ocasionalmente sueltan botellas de miel si se extraen con un dispensador.
+                <p><b>Ubicación:</b> Biomas de bosque, llanuras y florales. Cerca de nidos de abejas.
+                <p><b>Cómo matarlos más fácil:</b> Atacan en grupo si se ataca a una o a su nido. No los ataques sin protección.
+                <p><b>Especial:</b> Polinizan cultivos y árboles, ayudando a que crezcan más rápido. Regresan a su nido para hacer miel. Pican al jugador y mueren después, pero te envenenan.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="arana-cueva" class="w-100">
+            <div class="card2 p-3">
+                <h2>Araña de cueva (Cave Spider)</h2>
+                <p><b>Drops:</b> Hilo (0-2), Ojo de araña (0-1).
+                <p><b>Ubicación:</b> Minas abandonadas (Abandoned Mineshafts).
+                <p><b>Cómo matarlos más fácil:</b> Son más pequeñas y venenosas que las arañas normales. Usa un escudo y ataca rápidamente.
+                <p><b>Especial:</b> Son venenosas, aplicando el efecto de veneno al jugador.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="golem-hierro" class="w-100">
+            <div class="card2 p-3">
+                <h2>Gólem de Hierro (Iron Golem)</h2>
+                <p><b>Drops:</b> Lingote de hierro (3-5), Amapola (0-2).
+                <p><b>Ubicación:</b> Generado en pueblos (Villages) o creado por el jugador.
+                <p><b>Cómo matarlos más fácil:</b> Son muy resistentes. Es mejor usar arcos o tridentes para atacarlos desde la distancia, o trampas de caída.
+                <p><b>Especial:</b> Son neutrales y protegen a los aldeanos de los mobs hostiles. Atacan a los mobs hostiles.</p>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="row justify-content-center mb-5">
+      <div class="col-md-8">
+        <div class="card2 text-center sitalve">
+          <h2 class="noseten" id="hostiles">Mobs hostiles</h2>
+        </div>
+      </div>
+    </div>
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="zombi" class="w-100">
+            <div class="card2 p-3">
+                <h2>Zombi (Zombie)</h2>
+                <p><b>Drops:</b> Carne podrida (0-2). Ocasionalmente, lingotes de hierro, zanahorias, patatas.
+                <p><b>Ubicación:</b> En la superficie durante la noche, en cuevas y estructuras subterráneas.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma. Son lentos. Una espada de hierro o diamante es efectiva.
+                <p><b>Especial:</b> Se queman a la luz del día. Pueden romper puertas de madera en dificultad difícil. Pueden invocar refuerzos.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="esqueleto" class="w-100">
+            <div class="card2 p-3">
+                <h2>Esqueleto (Skeleton)</h2>
+                <p><b>Drops:</b> Huesos (0-2), Flechas (0-2). Ocasionalmente, arco.
+                <p><b>Ubicación:</b> En la superficie durante la noche, en cuevas y estructuras subterráneas.
+                <p><b>Cómo matarlos más fácil:</b> Son peligrosos a distancia. Un escudo para bloquear flechas y luego atacar cuerpo a cuerpo.
+                <p><b>Especial:</b> Disparan flechas al jugador. Se queman a la luz del día.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="creeper" class="w-100">
+            <div class="card2 p-3">
+                <h2>Creeper</h2>
+                <p><b>Drops:</b> Pólvora (0-2). Discos de música si mueren por un esqueleto.
+                <p><b>Ubicación:</b> En la superficie durante la noche, en cuevas y estructuras subterráneas.
+                <p><b>Cómo matarlos más fácil:</b> Atacarlos y retroceder antes de que exploten. Un arco es seguro.
+                <p><b>Especial:</b> Explotan al acercarse al jugador. Pueden ser cargados por un rayo, lo que los hace explotar más fuerte y sueltan cabezas de otros mobs si matan a esos mobs.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="slime" class="w-100">
+            <div class="card2 p-3">
+                <h2>Slime</h2>
+                <p><b>Drops:</b> Bolas de limo (cuando se rompen).
+                <p><b>Ubicación:</b> Pantanos y cuevas subterráneas profundas (Slime Chunks).
+                <p><b>Cómo matarlos más fácil:</b> Atacarlos repetidamente para que se dividan en limos más pequeños hasta que desaparezcan.
+                <p><b>Especial:</b> Se dividen en limos más pequeños al ser derrotados. No causan daño directo, sino que te empujan.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="gast" class="w-100">
+            <div class="card2 p-3">
+                <h2>Gast (Ghast)</h2>
+                <p><b>Drops:</b> Lágrima de Gast (0-1), Pólvora (0-2).
+                <p><b>Ubicación:</b> Nether.
+                <p><b>Cómo matarlos más fácil:</b> Desviar sus bolas de fuego de vuelta hacia ellos. Un arco es efectivo.
+                <p><b>Especial:</b> Flotan y disparan bolas de fuego explosivas. Lloran un sonido característico.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="magma-cube" class="w-100">
+            <div class="card2 p-3">
+                <h2>Magma Cube</h2>
+                <p><b>Drops:</b> Crema de magma (cuando se rompen).
+                <p><b>Ubicación:</b> Nether.
+                <p><b>Cómo matarlos más fácil:</b> Como los Slimes, atacarlos para que se dividan en cubos más pequeños.
+                <p><b>Especial:</b> Son la versión del Nether de los Slimes. Son inmunes al fuego y a la lava.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="blaze" class="w-100">
+            <div class="card2 p-3">
+                <h2>Blaze</h2>
+                <p><b>Drops:</b> Vara de Blaze (0-1).
+                <p><b>Ubicación:</b> Fortalezas del Nether (Nether Fortresses).
+                <p><b>Cómo matarlos más fácil:</b> Son peligrosos. Usa pociones de resistencia al fuego. Las bolas de nieve les causan daño.
+                <p><b>Especial:</b> Vuelan y disparan ráfagas de bolas de fuego.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="guardian" class="w-100">
+            <div class="card2 p-3">
+                <h2>Guardián (Guardian)</h2>
+                <p><b>Drops:</b> Prisma marino (0-2), Cristal marino (0-1), Pescado crudo (0-1).
+                <p><b>Ubicación:</b> Monumentos Oceánicos (Ocean Monuments).
+                <p><b>Cómo matarlos más fácil:</b> Son peligrosos bajo el agua. Usa pociones de respiración acuática y visión nocturna. Los encantamientos de respiración y aptitud acuática en la armadura son útiles.
+                <p><b>Especial:</b> Disparan un rayo láser que causa daño. Aplican "Fatiga de Minado" en los jugadores cercanos.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="anciano-guardian" class="w-100">
+            <div class="card2 p-3">
+                <h2>Anciano Guardián (Elder Guardian)</h2>
+                <p><b>Drops:</b> Prisma marino (0-2), Cristal marino (0-1), Esponja (1).
+                <p><b>Ubicación:</b> Solo tres aparecen en cada Monumento Oceánico.
+                <p><b>Cómo matarlos más fácil:</b> Son como los Guardianes, pero más grandes y resistentes. Son un desafío considerable.
+                <p><b>Especial:</b> Son más grandes y fuertes que los Guardianes normales. Aplican un efecto de "Fatiga de Minado III" a los jugadores cercanos, lo que ralentiza drásticamente la velocidad de minería.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="shulker" class="w-100">
+            <div class="card2 p-3">
+                <h2>Shulker</h2>
+                <p><b>Drops:</b> Cáscara de Shulker (0-1).
+                <p><b>Ubicación:</b> Ciudades del End (End Cities).
+                <p><b>Cómo matarlos más fácil:</b> Disparan proyectiles teledirigidos que causan levitación. Un arco es muy efectivo para golpearlos desde la distancia.
+                <p><b>Especial:</b> Se mimetizan con el entorno y disparan proyectiles que causan el efecto de levitación.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="evocador" class="w-100">
+            <div class="card2 p-3">
+                <h2>Evocador (Evoker)</h2>
+                <p><b>Drops:</b> Tótem de la inmortalidad (1), Esmeralda (0-1).
+                <p><b>Ubicación:</b> Mansiones en los bosques (Woodland Mansions) e Incursiones (Raids).
+                <p><b>Cómo matarlos más fácil:</b> Son peligrosos. Atacan con invocaciones de "Fangs" y Vexes. Atácalos rápidamente.
+                <p><b>Especial:</b> Invocan "Fangs" (mandíbulas) del suelo y pequeños mobs voladores llamados Vexes.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="vindicador" class="w-100">
+            <div class="card2 p-3">
+                <h2>Vindicador (Vindicator)</h2>
+                <p><b>Drops:</b> Esmeralda (0-1), Hacha de hierro (0-1).
+                <p><b>Ubicación:</b> Mansiones en los bosques (Woodland Mansions) e Incursiones (Raids).
+                <p><b>Cómo matarlos más fácil:</b> Son agresivos. Atacan con hachas.
+                <p><b>Especial:</b> Cargas hacia el jugador con un hacha.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="vex" class="w-100">
+            <div class="card2 p-3">
+                <h2>Vex</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Invocados por los Evocadores.
+                <p><b>Cómo matarlos más fácil:</b> Son pequeños, rápidos y pueden atravesar bloques. Son difíciles de golpear.
+                <p><b>Especial:</b> Son pequeños mobs voladores que atraviesan paredes y atacan con espadas. Desaparecen después de un tiempo.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="ravager" class="w-100">
+            <div class="card2 p-3">
+                <h2>Devastador (Ravager)</h2>
+                <p><b>Drops:</b> Montura (1), Bloque de Esmeralda (cuando se lo derrota en una Incursión).
+                <p><b>Ubicación:</b> Incursiones (Raids).
+                <p><b>Cómo matarlos más fácil:</b> Son muy resistentes y causan mucho daño. Un arco y flechas son útiles, o un equipo completo de combate.
+                <p><b>Especial:</b> Atacan embistiendo y rugiendo, lo que aturde al jugador.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="wither-skeleton" class="w-100">
+            <div class="card2 p-3">
+                <h2>Espectro de Wither (Wither Skeleton)</h2>
+                <p><b>Drops:</b> Huesos (0-2), Carbón (0-1). Ocasionalmente, espada de piedra, cráneo de Wither (muy baja probabilidad).
+                <p><b>Ubicación:</b> Fortalezas del Nether (Nether Fortresses).
+                <p><b>Cómo matarlos más fácil:</b> Son peligrosos. Aplican el efecto "Wither". Una espada con "Filo IV" o "Aspecto Ígneo" es útil.
+                <p><b>Especial:</b> Aplican el efecto de "Wither" (Descomposición) al atacar, que drena la salud del jugador.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="husk" class="w-100">
+            <div class="card2 p-3">
+                <h2>Husks</h2>
+                <p><b>Drops:</b> Carne podrida (0-2). Ocasionalmente, lingotes de hierro, zanahorias, patatas.
+                <p><b>Ubicación:</b> Desiertos.
+                <p><b>Cómo matarlos más fácil:</b> Son como los Zombis, pero inmunes al sol.
+                <p><b>Especial:</b> Son variantes de los Zombis que no se queman a la luz del día y aplican el efecto de "Hambre" al atacar.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="drowned" class="w-100">
+            <div class="card2 p-3">
+                <h2>Ahogados (Drowned)</h2>
+                <p><b>Drops:</b> Carne podrida (0-2), Lingote de cobre (cuando tienen una hacha). Ocasionalmente, tridente (muy baja probabilidad), caña de pescar.
+                <p><b>Ubicación:</b> Océanos, ríos, lagos.
+                <p><b>Cómo matarlos más fácil:</b> Son más peligrosos bajo el agua. Atacan con tridentes o sin ellos.
+                <p><b>Especial:</b> Son la versión acuática de los Zombis. Pueden respirar bajo el agua y nadar. Algunos llevan tridentes y los lanzan.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="stray" class="w-100">
+            <div class="card2 p-3">
+                <h2>Stray</h2>
+                <p><b>Drops:</b> Huesos (0-2), Flechas (0-2), Flecha de lentitud (0-1).
+                <p><b>Ubicación:</b> Biomas nevados y de hielo.
+                <p><b>Cómo matarlos más fácil:</b> Son como los esqueletos, pero más lentos.
+                <p><b>Especial:</b> Son variantes de los Esqueletos que disparan flechas de lentitud.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="phantom" class="w-100">
+            <div class="card2 p-3">
+                <h2>Fantasma (Phantom)</h2>
+                <p><b>Drops:</b> Membrana de fantasma (0-1).
+                <p><b>Ubicación:</b> En la superficie durante la noche si el jugador no ha dormido durante tres o más días de Minecraft.
+                <p><b>Cómo matarlos más fácil:</b> Usar un arco y flechas es efectivo. Permanecer bajo techo los ahuyenta.
+                <p><b>Especial:</b> Son mobs voladores que atacan solo si el jugador ha estado sin dormir durante varios días. Se queman a la luz del día.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="witch" class="w-100">
+            <div class="card2 p-3">
+                <h2>Bruja (Witch)</h2>
+                <p><b>Drops:</b> Polvo de piedra luminosa, Pólvora, Azúcar, Ojo de araña, Frasco de agua, Redstone Dust. Ocasionalmente, pociones.
+                <p><b>Ubicación:</b> Chozas de brujas (Swamp Huts) y aparecen en Incursiones (Raids).
+                <p><b>Cómo matarlos más fácil:</b> Son peligrosas. Lanzan pociones de daño, debilidad, veneno y lentitud. Una espada con "Filo IV" es efectiva.
+                <p><b>Especial:</b> Lanzan pociones ofensivas y se beben pociones curativas o de resistencia.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="wither" class="w-100">
+            <div class="card2 p-3">
+                <h2>Wither</h2>
+                <p><b>Drops:</b> Estrella del Nether (1).
+                <p><b>Ubicación:</b> Invocado por el jugador usando arena de almas y tres cráneos de Wither.
+                <p><b>Cómo matarlos más fácil:</b> Es el segundo jefe más difícil del juego. Prepara un equipo completo de armadura y armas encantadas. Las pociones de resistencia y regeneración son cruciales.
+                <p><b>Especial:</b> Dispara calaveras explosivas de Wither. Causa el efecto "Wither" en los mobs y jugadores. Destruye bloques al volar.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="ender-dragon" class="w-100">
+            <div class="card2 p-3">
+                <h2>Dragón de Ender (Ender Dragon)</h2>
+                <p><b>Drops:</b> 12.000 XP. Huevo de Dragón (1, la primera vez que se derrota).
+                <p><b>Ubicación:</b> El End.
+                <p><b>Cómo matarlos más fácil:</b> Es el jefe final del juego. Destruye los cristales del End para evitar que se cure. Usa arcos para dispararle.
+                <p><b>Especial:</b> Es el jefe final del juego. Vuela y embiste al jugador. Se cura con los cristales del End.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="zoglin" class="w-100">
+            <div class="card2 p-3">
+                <h2>Zoglin</h2>
+                <p><b>Drops:</b> Carne podrida (0-2).
+                <p><b>Ubicación:</b> Creados cuando un Hoglin es llevado al mundo superior o al End.
+                <p><b>Cómo matarlos más fácil:</b> Son agresivos con todo. Una espada con "Filo IV" es efectiva.
+                <p><b>Especial:</b> Son Hoglins zombificados. Atacan a todo lo que se mueve, excepto a otros Zoglins.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="hoglin" class="w-100">
+            <div class="card2 p-3">
+                <h2>Hoglin</h2>
+                <p><b>Drops:</b> Carne de cerdo cruda (1-3), Cuero (0-2).
+                <p><b>Ubicación:</b> Biomas de Crimson Forest en el Nether.
+                <p><b>Cómo matarlos más fácil:</b> Son agresivos. Se asustan de los hongos distorsionados (Warped Fungi).
+                <p><b>Especial:</b> Son mobs de cerdo que se reproducen en el Nether. Son una fuente de alimento en el Nether.</p>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="row justify-content-center mb-5">
+      <div class="col-md-8">
+        <div class="card2 text-center sitalve">
+          <h2 class="noseten" id="Invocados">Mobs de Un Solo Uso (Invocados/Generados con Estructura)</h2>
+        </div>
+      </div>
+    </div>
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="golem-nieve" class="w-100">
+            <div class="card2 p-3">
+                <h2>Gólem de Nieve (Snow Golem)</h2>
+                <p><b>Drops:</b> Bolas de nieve (0-15).
+                <p><b>Ubicación:</b> Creado por el jugador colocando dos bloques de nieve y una calabaza encima.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma. Son débiles y se derriten en biomas cálidos o bajo la lluvia.
+                <p><b>Especial:</b> Lanza bolas de nieve a los mobs hostiles cercanos. Deja un rastro de nieve.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row justify-content-center mb-5">
+      <div class="col-md-8">
+        <div class="card2 text-center sitalve">
+          <h2 class="noseten" id="Inactivos">Mobs Inactivos (Bloques de Mobs)</h2>
+        </div>
+      </div>
+    </div>
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="silverfish" class="w-100">
+            <div class="card2 p-3">
+                <h2>Silverfish</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Bloques de piedra infestados en fuertes (Strongholds), montañas esmeralda (Emerald Mountain), y bloques de End Stone en el End.
+                <p><b>Cómo matarlos más fácil:</b> Son pequeños y rápidos. Una espada con "Ruina de los Artrópodos" es efectiva.
+                <p><b>Especial:</b> Salen de ciertos bloques de piedra cuando se rompen. Pueden infestar bloques cercanos.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="endermite" class="w-100">
+            <div class="card2 p-3">
+                <h2>Endermite</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Aparecen aleatoriamente al lanzar una perla de Ender.
+                <p><b>Cómo matarlos más fácil:</b> Son pequeños y tienen poca salud.
+                <p><b>Especial:</b> Son hostiles al jugador. Los Enderman se vuelven hostiles hacia los Endermite.</p>
+            </div>
+        </section>
+    </div>
+</div>
+<div class="row justify-content-center mb-5">
+      <div class="col-md-8">
+        <div class="card2 text-center sitalve">
+          <h2 class="noseten" id="variantes">Mobs que no se generan de forma natural o son variantes especiales</h2>
+        </div>
+      </div>
+    </div>
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="aldeano-zombi" class="w-100">
+            <div class="card2 p-3">
+                <h2>Aldeano Zombi (Zombie Villager)</h2>
+                <p><b>Drops:</b> Carne podrida (0-2).
+                <p><b>Ubicación:</b> Aparecen aleatoriamente cuando un Zombi mata a un Aldeano en dificultad normal o difícil.
+                <p><b>Cómo matarlos más fácil:</b> Como los Zombis, pero se pueden curar con una poción de debilidad y una manzana dorada para convertirlos de nuevo en Aldeanos.
+                <p><b>Especial:</b> Se pueden curar para convertirlos en Aldeanos.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="jinete-zombi" class="w-100">
+            <div class="card2 p-3">
+                <h2>Jinete Zombi (Chicken Jockey)</h2>
+                <p><b>Drops:</b> Lo que suelte el Zombi y el Pollo.
+                <p><b>Ubicación:</b> Muy raro. Un Zombi bebé montado en un Pollo.
+                <p><b>Cómo matarlos más fácil:</b> Matar al Zombi primero.
+                <p><b>Especial:</b> El Zombi bebé no se quema con el sol mientras está montado.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="jinete-esqueleto" class="w-100">
+            <div class="card2 p-3">
+                <h2>Jinete Esqueleto (Spider Jockey)</h2>
+                <p><b>Drops:</b> Lo que suelte el Esqueleto y la Araña.
+                <p><b>Ubicación:</b> Muy raro. Un Esqueleto montado en una Araña.
+                <p><b>Cómo matarlos más fácil:</b> Matar al Esqueleto primero.
+                <p><b>Especial:</b> Combina las habilidades de la Araña (escalar paredes) y del Esqueleto (disparar flechas).</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="jinete-esqueleto-rayo" class="w-100">
+            <div class="card2 p-3">
+                <h2>Jinete Esqueleto del Rayo (Skeleton Horseman)</h2>
+                <p><b>Drops:</b> Lo que suelte el Esqueleto y el Caballo Esqueleto.
+                <p><b>Ubicación:</b> Invocado por un rayo que golpea.
+                <p><b>Cómo matarlos más fácil:</b> Son rápidos y peligrosos.
+                <p><b>Especial:</b> Una vez que un rayo "trampa" golpea, invoca varios de estos jinetes.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="caballo-zombi" class="w-100">
+            <div class="card2 p-3">
+                <h2>Caballo Zombi (Zombie Horse)</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> No se genera de forma natural. Solo se puede invocar con comandos.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Una variante de caballo.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="caballo-esqueleto" class="w-100">
+            <div class="card2 p-3">
+                <h2>Caballo Esqueleto (Skeleton Horse)</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Rara vez, un rayo puede transformar un caballo normal en uno.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Es un caballo no-muerto. Se puede montar.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="aldeano" class="w-100">
+            <div class="card2 p-3">
+                <h2>Aldeano (Villager)</h2>
+                <p><b>Drops:</b> Ninguno.
+                <p><b>Ubicación:</b> Pueblos (Villages).
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Se pueden intercambiar objetos con ellos. Tienen diferentes profesiones.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="comerciante-errante" class="w-100">
+            <div class="card2 p-3">
+                <h2>Comerciante Errante (Wandering Trader)</h2>
+                <p><b>Drops:</b> Leche (si se le da un cubo vacío), Poción de invisibilidad (cuando muere).
+                <p><b>Ubicación:</b> Aparece aleatoriamente cerca del jugador.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Ofrece un comercio único de varios objetos y tiene Llamas del comerciante. Desaparece después de un tiempo.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="llama-comerciante" class="w-100">
+            <div class="card2 p-3">
+                <h2>Llama del Comerciante (Trader Llama)</h2>
+                <p><b>Drops:</b> Cuero (0-2).
+                <p><b>Ubicación:</b> Junto al Comerciante Errante.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Escupen a los jugadores que ataquen al Comerciante Errante.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="caballo" class="w-100">
+            <div class="card2 p-3">
+                <h2>Caballo (Horse)</h2>
+                <p><b>Drops:</b> Cuero (0-2).
+                <p><b>Ubicación:</b> Biomas de llanuras y sabanas.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Se pueden domesticar y montar. Se les puede poner una silla de montar y armadura de caballo.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="burro" class="w-100">
+            <div class="card2 p-3">
+                <h2>Burro (Donkey)</h2>
+                <p><b>Drops:</b> Cuero (0-2).
+                <p><b>Ubicación:</b> Biomas de llanuras y sabanas.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Se pueden domesticar y montar. Se les puede poner un cofre para transportar objetos.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="mula" class="w-100">
+            <div class="card2 p-3">
+                <h2>Mula (Mule)</h2>
+                <p><b>Drops:</b> Cuero (0-2).
+                <p><b>Ubicación:</b> No se genera de forma natural. Resultado del cruce entre un caballo y un burro.
+                <p><b>Cómo matarlos más fácil:</b> Cualquier arma.
+                <p><b>Especial:</b> Se pueden domesticar y montar. Se les puede poner un cofre para transportar objetos.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="drowned-trident" class="w-100">
+            <div class="card2 p-3">
+                <h2>Zombi ahogado con tridente (Drowned with Trident)</h2>
+                <p><b>Drops:</b> Carne podrida (0-2), Lingote de cobre (cuando tienen una hacha). Ocasionalmente, tridente (muy baja probabilidad), caña de pescar.
+                <p><b>Ubicación:</b> Océanos, ríos, lagos.
+                <p><b>Cómo matarlos más fácil:</b> Son más peligrosos bajo el agua.
+                <p><b>Especial:</b> Son Zombis ahogados que empuñan tridentes, lo que los hace más peligrosos.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="zombie-armado" class="w-100">
+            <div class="card2 p-3">
+                <h2>Zombi con armadura/herramientas (Armored/Tool Zombie)</h2>
+                <p><b>Drops:</b> Lo que suelte el Zombi más el equipamiento que llevaba.
+                <p><b>Ubicación:</b> Generación aleatoria de Zombis con equipamiento.
+                <p><b>Cómo matarlos más fácil:</b> Son más resistentes debido a su armadura.
+                <p><b>Especial:</b> Tienen armadura y/o herramientas/armas, lo que aumenta su dificultad.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="esqueleto-armado" class="w-100">
+            <div class="card2 p-3">
+                <h2>Esqueleto con armadura/herramientas (Armored/Tool Skeleton)</h2>
+                <p><b>Drops:</b> Lo que suelte el Esqueleto más el equipamiento que llevaba.
+                <p><b>Ubicación:</b> Generación aleatoria de Esqueletos con equipamiento.
+                <p><b>Cómo matarlos más fácil:</b> Son más resistentes y sus ataques son más potentes.
+                <p><b>Especial:</b> Tienen armadura y/o herramientas/armas, lo que aumenta su dificultad.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="aldeano-bruja" class="w-100">
+            <div class="card2 p-3">
+                <h2>Aldeano Bruja (Witch Villager)</h2>
+                <p><b>Drops:</b> Los mismos que la bruja normal.
+                <p><b>Ubicación:</b> Cuando un aldeano es impactado por un rayo.
+                <p><b>Cómo matarlos más fácil:</b> Son como las brujas.
+                <p><b>Especial:</b> Un aldeano transformado en bruja por un rayo.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+<div class="row align-items-stretch mb-4">
+    <div class="col-md-6 d-flex justify-content-start">
+        <section id="jinete-esqueleto-nether" class="w-100">
+            <div class="card2 p-3">
+                <h2>Jinete Esqueleto del Nether (Nether Skeleton Horseman)</h2>
+                <p><b>Drops:</b> Lo que suelte el Esqueleto de Wither y el Caballo Esqueleto.
+                <p><b>Ubicación:</b> Muy raro. Un Esqueleto de Wither montado en un Caballo Esqueleto.
+                <p><b>Cómo matarlos más fácil:</b> Son muy peligrosos.
+                <p><b>Especial:</b> Combinan la peligrosidad del Esqueleto de Wither con la movilidad del caballo esqueleto.</p>
+            </div>
+        </section>
+    </div>
+
+    <div class="col-md-6 d-flex justify-content-end">
+        <section id="raid-captain" class="w-100">
+            <div class="card2 p-3">
+                <h2>Capitán de Incursión (Raid Captain)</h2>
+                <p><b>Drops:</b> Bandera (Ominous Banner) (1).
+                <p><b>Ubicación:</b> Aparecen en Incursiones.
+                <p><b>Cómo matarlos más fácil:</b> Son más fuertes.
+                <p><b>Especial:</b> Llevan una bandera en la cabeza. Derrotarlos y recoger la bandera otorga el efecto "Mala Suerte" (Bad Omen), que al entrar en un pueblo inicia una incursión.</p>
+            </div>
+        </section>
+    </div>
+</div>
+
+        </div>
+      </div>
+
+  </main>
+  <section class="text-center py-4" style="background-color: rgba(0, 0, 0, 0.9); color: rgb(255, 255, 255);">
+    <h4 class="mb-3">Sigue a Minecraft en sus redes sociales</h4>
+    <div class="d-flex justify-content-center gap-4 fs-4">
+      <a href="https://www.youtube.com/minecraft" target="_blank" style="color: rgb(255, 255, 255);">
+        <i class="fab fa-youtube"></i>
+      </a>
+      <a href="https://www.instagram.com/minecraft" target="_blank" style="color: rgb(255, 255, 255);">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@minecraft" target="_blank" style="color: rgb(255, 255, 255);">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://x.com/minecraft" target="_blank" style="color: rgb(255, 255, 255);">
+        <i class="fab fa-x-twitter"></i>
+      </a>
+      <a href="https://www.facebook.com/minecraft" target="_blank" style="color: rgb(255, 255, 255);">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Randy Vengoechea, Juan Suares, Mateux Anzola - Guía Minecraft</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
